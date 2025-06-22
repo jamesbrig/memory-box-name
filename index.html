@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Explosion Game</title>
+ 
+<link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+<head>
+<body>
+<h1>The Memory Box Game</h1>
+<h5>Directions: choose level (determine how many boxes appear), after all boxes load (very important!), select order in whch they appeared, click Check Answer, you will get Answer and then game resets in few seconds</h5>
+  <div class="header">
+    <button onclick="start()" id="btnStart">Start</button>
+    <button onclick="getResults()" id="btnResults">Check Answer</button>
+    <label for="level" id="level-label">Choose a level:</label>
+    <select id="level">
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+      <option value="7">7</option>
+      <option value="8">8</option>
+      <option value="9">9</option>
+    </select>
+
+  </div>
+
+  <!-- 🔥 Explosion GIF -->
+  <img id="explosionImage" src="images/fireworks2.png" alt="Congratulatory fireworks" />
+
+  <div class="main-area">
+    <div class="grid">
+      <div id="num1" class="cell" onclick="highlight(1);"></div>
+      <div id="num2" class="cell" onclick="highlight(2);"></div>
+      <div id="num3" class="cell" onclick="highlight(3);"></div>
+      <div id="num4" class="cell" onclick="highlight(4);"></div>
+      <div id="num5" class="cell" onclick="highlight(5);"></div>
+      <div id="num6" class="cell" onclick="highlight(6);"></div>
+      <div id="num7" class="cell" onclick="highlight(7);"></div>
+      <div id="num8" class="cell" onclick="highlight(8);"></div>
+      <div id="num9" class="cell" onclick="highlight(9);"></div>
+    </div>
+<div class="score-display">
+  <h3>Score</h3>
+  <p id="scoreText">Wins: 0 | Losses: 0</p>
+</div>
+
+  </div>
+
+</body>
+</html>

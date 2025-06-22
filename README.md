@@ -1,5 +1,3 @@
-# memory-box-name
-a small game to test your memory and attention span.
 # Memory Box Game
 
 A fun memory matching game where the user has to the correct order in which the boxes appeared.
